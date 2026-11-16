@@ -1,0 +1,133 @@
+{
+  "schemaVersion": 1,
+  "location": {
+    "name": "上海市",
+    "latitude": 31.2304,
+    "longitude": 121.4737
+  },
+  "fetchedAt": "2026-11-16T14:07:20.848Z",
+  "refreshIntervalMinutes": 15,
+  "warnings": [],
+  "typhoons": [],
+  "weather": {
+    "observedAt": "2026-11-16T22:00+08:00",
+    "current": {
+      "time": "2026-11-16T22:00",
+      "interval": 900,
+      "temperature_2m": 12.9,
+      "relative_humidity_2m": 85,
+      "precipitation": 0,
+      "rain": 0,
+      "weather_code": 0,
+      "cloud_cover": 16,
+      "wind_speed_10m": 5.7,
+      "wind_direction_10m": 351,
+      "wind_gusts_10m": 12.6
+    },
+    "units": {
+      "time": "iso8601",
+      "interval": "seconds",
+      "temperature_2m": "°C",
+      "relative_humidity_2m": "%",
+      "precipitation": "mm",
+      "rain": "mm",
+      "weather_code": "wmo code",
+      "cloud_cover": "%",
+      "wind_speed_10m": "km/h",
+      "wind_direction_10m": "°",
+      "wind_gusts_10m": "km/h"
+    },
+    "recentPrecipitation": [
+      {
+        "time": "2026-11-16T17:00+08:00",
+        "precipitationMm": 0,
+        "probabilityPercent": 0
+      },
+      {
+        "time": "2026-11-16T18:00+08:00",
+        "precipitationMm": 0,
+        "probabilityPercent": 0
+      },
+      {
+        "time": "2026-11-16T19:00+08:00",
+        "precipitationMm": 0,
+        "probabilityPercent": 0
+      },
+      {
+        "time": "2026-11-16T20:00+08:00",
+        "precipitationMm": 0,
+        "probabilityPercent": 0
+      },
+      {
+        "time": "2026-11-16T21:00+08:00",
+        "precipitationMm": 0,
+        "probabilityPercent": 0
+      },
+      {
+        "time": "2026-11-16T22:00+08:00",
+        "precipitationMm": 0,
+        "probabilityPercent": 0
+      }
+    ],
+    "rainCore": {
+      "locationName": "上海全市暂无明显降雨核心",
+      "latitude": 31.2304,
+      "longitude": 121.4737,
+      "precipitationRateMmH": 0,
+      "intensity": "无明显降雨",
+      "movementDirection": "无明显移动",
+      "method": "Open-Meteo 九点格点估算；移动方向仅作趋势参考"
+    },
+    "sourceUrl": "https://open-meteo.com/en/docs"
+  },
+  "radar": {
+    "id": "RC-202611162200",
+    "idNote": "平台按雷达时次生成的监测编号，并非气象部门官方云团命名",
+    "observedAt": "2026-11-16T14:00:00.000Z",
+    "generatedAt": "2026-11-16T14:00:24.000Z",
+    "tileUrl": "https://tilecache.rainviewer.com/v2/radar/c6d58abda692/256/{z}/{x}/{y}/2/1_1.png",
+    "sourceUrl": "https://www.rainviewer.com/api/weather-maps-api.html",
+    "attribution": "Weather radar data by RainViewer"
+  },
+  "health": {
+    "warnings": {
+      "ok": true,
+      "updatedAt": "2026-11-16T14:07:19.770Z"
+    },
+    "typhoons": {
+      "ok": true,
+      "updatedAt": "2026-11-16T14:07:19.788Z"
+    },
+    "weather": {
+      "ok": true,
+      "updatedAt": "2026-11-16T14:07:20.848Z"
+    },
+    "radar": {
+      "ok": true,
+      "updatedAt": "2026-11-16T14:07:20.672Z"
+    }
+  },
+  "sources": [
+    {
+      "name": "上海预警中心",
+      "url": "https://www.weather.com.cn/zhyj/",
+      "role": "上海市及各区生效预警"
+    },
+    {
+      "name": "中央气象台台风网",
+      "url": "https://typhoon.nmc.cn/",
+      "role": "活动台风实况与预报路径"
+    },
+    {
+      "name": "RainViewer",
+      "url": "https://www.rainviewer.com/api/weather-maps-api.html",
+      "role": "雷达拼图时次与地图图层"
+    },
+    {
+      "name": "Open-Meteo",
+      "url": "https://open-meteo.com/en/docs",
+      "role": "上海格点降水、风与温湿度"
+    }
+  ],
+  "notice": "本网站聚合公开气象数据，不是官方预警发布平台。预警信息以发布机构原文为准，紧急情况请遵从属地政府和主管部门指令。"
+}
