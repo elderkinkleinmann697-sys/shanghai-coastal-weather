@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#071824" />
+    <meta name="description" content="沿海气象灾害实况预警演示平台。所有数据仅为演示使用。" />
+    <title>海岸安 · 沿海气象风险预警</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="topbar">
+        <a class="brand" href="#top" aria-label="海岸安首页">
+          <span class="brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 36 36" fill="none"><path d="M4 21.5c4.8-4.5 9.1-4.5 13.8 0 4.7 4.5 9 4.5 14.2-.5M4 28c4.8-4.5 9.1-4.5 13.8 0 4.7 4.5 9 4.5 14.2-.5M18 6v8m-4-4 4-4 4 4" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </span>
+          <span><strong>海岸安</strong><small>COASTAL WEATHER WATCH</small></span>
+        </a>
+
+        <nav class="main-nav" aria-label="主要导航">
+          <button class="nav-link active" data-view="overview">风险总览</button>
+          <button class="nav-link" data-view="typhoon">台风路径</button>
+          <button class="nav-link" data-view="rain">暴雨云团</button>
+          <a class="nav-link" href="#guidance">避险指南</a>
+        </nav>
+
+        <div class="top-actions">
+          <button class="location-button" id="locateButton" type="button" title="切换演示区县">
+            <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 2.3v2M10 15.7v2M17.7 10h-2M4.3 10h-2M10 14.2a4.2 4.2 0 1 0 0-8.4 4.2 4.2 0 0 0 0 8.4Z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+            <span id="locationLabel">东岚县</span><span class="chevron">⌄</span>
+          </button>
+          <button class="avatar" type="button" aria-label="用户设置">林</button>
+        </div>
+      </header>
+
+      <main id="top">
+        <div class="demo-banner" role="note">
+          <span class="demo-pulse" aria-hidden="true"></span>
+          <strong>演示环境</strong>
+          <span>当前页面所有气象数据、预警、地图轨迹和影响范围均为模拟内容，仅供演示使用，不可用于实际决策。</span>
+          <span class="demo-tag">DEMO DATA</span>
+        </div>
+
+        <section class="welcome-row">
+          <div>
+            <div class="eyebrow"><span class="live-dot"></span> 沿海风险监测台 <span class="eyebrow-divider">/</span> 试点区域</div>
+            <h1>守望海岸，<span id="countyTitle">东岚县</span></h1>
+            <p class="welcome-copy">把天气风险看清楚，让每一步防范都有准备。</p>
+          </div>
+          <div class="updated-box">
+            <span class="updated-icon">↻</span>
+            <div><small>演示数据时间</small><strong>08月15日 14:20</strong></div>
+            <span class="update-status">样例</span>
+          </div>
+        </section>
+
+        <section class="risk-strip" aria-label="本地风险摘要">
+          <article class="risk-summary risk-typhoon">
+            <div class="summary-top"><span class="summary-icon typhoon-icon">〰</span><span class="summary-label">台风风险</span><span class="level-pill orange">橙色预警</span></div>
+            <div class="summary-main"><strong>台风「海鸥」</strong><span class="summary-arrow">↗</span><span class="summary-distance">距本县约 186 km</span></div>
+            <div class="summary-bottom"><span>预计今夜起风雨增强</span><span class="summary-link" data-view="typhoon">查看路径 <b>→</b></span></div>
+          </article>
+          <article class="risk-summary risk-rain">
+            <div class="summary-top"><span class="summary-icon rain-icon">☂</span><span class="summary-label">暴雨风险</span><span class="level-pill yellow">黄色预警</span></div>
+            <div class="summary-main"><strong>云团编号 RC-0826</strong><span class="summary-arrow">↖</span><span class="summary-distance">正向沿岸移动</span></div>
+            <div class="summary-bottom"><span>局部强降雨，注意低洼积水</span><span class="summary-link" data-view="rain">查看云团 <b>→</b></span></div>
+          </article>
+          <article class="readiness-card">
+            <div class="readiness-ring"><span>72<small>%</small></span></div>
+            <div class="readiness-text"><span>今日防灾准备指数</span><strong>提前准备更安心</strong><small>根据模拟预警组合生成</small></div>
+            <span class="readiness-spark" aria-hidden="true">⌁</span>
+          </article>
+        </section>
+
+        <section class="dashboard-grid">
+          <div class="map-panel panel">
+            <div class="panel-heading map-heading">
+              <div><div class="section-kicker">LIVE WEATHER MAP <span class="demo-mini">演示</span></div><h2>沿海风险态势</h2></div>
+              <div class="map-controls" role="group" aria-label="地图图层">
+                <button class="layer-button selected" data-layer="all"><i class="layer-dot dot-all"></i>综合</button>
+                <button class="layer-button" data-layer="typhoon"><i class="layer-dot dot-typhoon"></i>台风路径</button>
+                <button class="layer-button" data-layer="rain"><i class="layer-dot dot-rain"></i>降雨云团</button>
+              </div>
+            </div>
+
+            <div class="map-canvas">
+              <div class="map-stamp"><span class="stamp-dot"></span>模拟态势 <b>08.15 14:20</b></div>
+              <div class="map-notice">示意地图 · 非导航</div>
+              <div class="map-coordinates coord-a">北纬 28°</div><div class="map-coordinates coord-b">北纬 26°</div>
+              <svg class="weather-map" viewBox="0 0 900 540" preserveAspectRatio="xMidYMid slice" role="img" aria-label="演示用沿海地图，显示台风路径和暴雨云团位置">
+                <defs>
+                  <pattern id="grid" width="72" height="72" patternUnits="userSpaceOnUse"><path d="M72 0H0V72" fill="none" stroke="#8bb2c1" stroke-opacity=".09" stroke-width="1"/></pattern>
+                  <radialGradient id="rainGlow"><stop stop-color="#52e2c2" stop-opacity=".55"/><stop offset=".55" stop-color="#29b9a9" stop-opacity=".24"/><stop offset="1" stop-color="#29b9a9" stop-opacity="0"/></radialGradient>
+                  <radialGradient id="stormGlow"><stop stop-color="#ffa76b" stop-opacity=".72"/><stop offset=".52" stop-color="#ff835b" stop-opacity=".28"/><stop offset="1" stop-color="#ff835b" stop-opacity="0"/></radialGradient>
+                  <filter id="blur"><feGaussianBlur stdDeviation="17"/></filter>
+                  <marker id="arrowCyan" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto"><path d="M0 0 6 3 0 6" fill="none" stroke="#76ead5" stroke-width="1.5"/></marker>
+                  <marker id="arrowOrange" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto"><path d="M0 0 6 3 0 6" fill="none" stroke="#ffad78" stroke-width="1.5"/></marker>
+                </defs>
+                <rect width="900" height="540" fill="#0b2230"/><rect width="900" height="540" fill="url(#grid)"/>
+                <path d="M0 90c112-17 186-7 271 10 81 16 103 60 157 80 45 17 85 19 119 55 35 36 52 75 92 99 39 24 45 61 77 85 38 30 85 50 184 42v79H0Z" fill="#142e35"/>
+                <path d="M0 90c112-17 186-7 271 10 81 16 103 60 157 80 45 17 85 19 119 55 35 36 52 75 92 99 39 24 45 61 77 85 38 30 85 50 184 42" fill="none" stroke="#66857e" stroke-width="2" stroke-opacity=".75"/>
+                <path d="M31 178c72-17 110 1 154 25m-95 68c64-18 104-3 154 24m81-149c19 36 16 60 10 88m105 8c-20 32-19 58-8 84m69 14c31-14 53-11 76 8m-408 85c63-28 105-20 153 1" fill="none" stroke="#59766e" stroke-width="1.4" stroke-opacity=".48"/>
+                <path d="M80 139c59 4 85 12 120 42m151-31c34 18 43 40 49 68m89 56c-15 22-15 36-5 58m114 14c20-8 39-4 52 10" fill="none" stroke="#314e4f" stroke-width="1" stroke-dasharray="3 6"/>
+                <text x="47" y="124" class="map-label muted">青岚山脉</text><text x="92" y="324" class="map-label muted">临海镇</text><text x="350" y="197" class="map-label muted">东岚县</text><text x="520" y="315" class="map-label muted">南湾新区</text><text x="655" y="445" class="map-label muted">白沙港</text><text x="581" y="145" class="sea-label">东海</text>
+                <g class="typhoon-layer"><path d="M180 406C274 374 319 327 392 306S505 262 565 219 648 179 710 153" fill="none" stroke="#ff9c6b" stroke-opacity=".22" stroke-width="17" stroke-linecap="round"/>
+                <path class="typhoon-route" d="M180 406C274 374 319 327 392 306S505 262 565 219 648 179 710 153" fill="none" stroke="#ffad78" stroke-width="2.5" stroke-dasharray="8 7" marker-end="url(#arrowOrange)"/>
+                <circle cx="180" cy="406" r="5" fill="#ffc08d"/><circle cx="392" cy="306" r="5" fill="#ffc08d"/><circle cx="565" cy="219" r="5" fill="#ffc08d"/><circle cx="710" cy="153" r="5" fill="#ffc08d"/>
+                <circle cx="565" cy="219" r="38" fill="url(#stormGlow)"/><circle cx="565" cy="219" r="15" fill="#ff9167" fill-opacity=".13" stroke="#ffad78" stroke-width="1.4"/><circle cx="565" cy="219" r="4" fill="#ffd3ad"/><text x="585" y="207" class="map-chip orange-chip">台风 海鸥</text><text x="586" y="225" class="map-small">当前位置 · 14:00</text></g>
+                <g class="rain-layer"><ellipse cx="462" cy="190" rx="122" ry="93" fill="url(#rainGlow)" filter="url(#blur)"/><path d="M382 208c9-44 48-69 83-50 23-37 78-24 83 15 40 3 56 41 33 66-21 24-50 9-79 23-34 16-49 33-81 14-27-16-48-34-39-68Z" fill="#42cdb4" fill-opacity=".10" stroke="#66e1c8" stroke-width="1.4" stroke-dasharray="5 5"/><path d="M467 158v68" stroke="#77ecd8" stroke-width="2" marker-end="url(#arrowCyan)"/><circle cx="467" cy="190" r="5" fill="#a7fff0"/><text x="394" y="145" class="map-chip cyan-chip">云团 RC-0826</text><text x="396" y="164" class="map-small">强降雨 · 向北移动</text>
+                <path d="M493 266C482 238 477 221 470 205" fill="none" stroke="#61daca" stroke-opacity=".65" stroke-width="1.5" stroke-dasharray="3 5" marker-end="url(#arrowCyan)"/></g>
+                <circle cx="350" cy="197" r="7" fill="#dffaf2" stroke="#66e1c8" stroke-width="2"/><circle cx="350" cy="197" r="15" fill="none" stroke="#66e1c8" stroke-opacity=".32"/><text x="301" y="176" class="map-small">你关注的区域</text>
+              </svg>
+              <div class="map-scale"><span>0</span><i></i><span>20 km</span></div>
+              <div class="map-legend"><span><i class="legend-line orange-line"></i>台风移动路径</span><span><i class="legend-area cyan-area"></i>降雨云团范围</span><span><i class="legend-dot"></i>关注区县</span></div>
+              <div class="map-zoom"><button aria-label="放大地图">＋</button><button aria-label="缩小地图">−</button></div>
+            </div>
+            <div class="map-footer"><span><b class="footer-dot orange-dot"></b> 台风「海鸥」沿西北方向移动</span><span><b class="footer-dot cyan-dot"></b> 云团 RC-0826 持续靠近沿岸</span><button id="mapDetails">查看图层说明 <span>↗</span></button></div>
+          </div>
+
+          <aside class="alert-panel panel">
+            <div class="panel-heading alert-heading"><div><div class="section-kicker">LOCAL ALERTS <span class="alert-count">02</span></div><h2>本地预警</h2></div><button class="more-button" id="allAlerts">全部预警 <span>→</span></button></div>
+            <div class="alert-list">
+              <article class="alert-item alert-orange">
+                <div class="alert-colorbar"></div><div class="alert-copy"><div class="alert-type"><span>台风</span><span class="alert-level">橙色预警</span><span class="alert-time">14:05 发布</span></div><h3>台风「海鸥」将影响沿海地区</h3><p>预计未来 12 小时，沿海阵风可达 10–12 级，请提前做好防风准备。</p><div class="alert-source">发布单位：东岚县气象台 <span>· 演示信息</span></div></div>
+              </article>
+              <article class="alert-item alert-yellow">
+                <div class="alert-colorbar"></div><div class="alert-copy"><div class="alert-type"><span>暴雨</span><span class="alert-level">黄色预警</span><span class="alert-time">13:40 发布</span></div><h3>局部区域有强降雨</h3><p>未来 6 小时部分乡镇降雨量可达 50–80 毫米，注意防范积水。</p><div class="alert-source">发布单位：东岚县气象台 <span>· 演示信息</span></div></div>
+              </article>
+            </div>
+            <div class="alert-footnote"><span class="info-icon">i</span> 四级预警颜色以官方发布为准；此处级别为模拟。</div>
+          </aside>
+        </section>
+
+        <section class="metrics-grid" aria-label="气象实况数据">
+          <article class="metric-card panel">
+            <div class="metric-head"><span class="metric-icon wind">↝</span><div><span class="metric-label">台风中心风力</span><span class="metric-unit">近中心最大风力</span></div><span class="metric-demo">演示数据</span></div>
+            <div class="metric-value">12 <small>级</small><span class="metric-trend up">↑ 2 级</span></div>
+            <div class="metric-foot"><span>台风「海鸥」</span><span>14:00 更新</span></div>
+          </article>
+          <article class="metric-card panel">
+            <div class="metric-head"><span class="metric-icon rain">▥</span><div><span class="metric-label">当前雨强</span><span class="metric-unit">云团中心附近</span></div><span class="metric-demo">演示数据</span></div>
+            <div class="metric-value">38 <small>mm/h</small><span class="metric-trend steady">持续降雨</span></div>
+            <div class="metric-foot"><span>云团 RC-0826</span><span>14:15 更新</span></div>
+          </article>
+          <article class="metric-card panel chart-card">
+            <div class="metric-head"><span class="metric-icon chart">⌁</span><div><span class="metric-label">近 6 小时降雨趋势</span><span class="metric-unit">模拟累计降雨量</span></div><span class="chart-total">62 <small>mm</small></span></div>
+            <div class="rain-chart" role="img" aria-label="演示数据的近六小时降雨趋势图">
+              <div class="chart-y"><span>40</span><span>20</span><span>0</span></div>
+              <svg viewBox="0 0 400 78" preserveAspectRatio="none" aria-hidden="true"><defs><linearGradient id="chartFill" x1="0" x2="0" y1="0" y2="1"><stop stop-color="#58d7c0" stop-opacity=".32"/><stop offset="1" stop-color="#58d7c0" stop-opacity="0"/></linearGradient></defs><path d="M0 67C25 64 30 61 55 60S82 60 109 53 142 58 163 45 196 47 220 40 253 40 277 27 311 31 332 21 372 17 400 8V78H0Z" fill="url(#chartFill)"/><path d="M0 67C25 64 30 61 55 60S82 60 109 53 142 58 163 45 196 47 220 40 253 40 277 27 311 31 332 21 372 17 400 8" fill="none" stroke="#68dbc7" stroke-width="2" vector-effect="non-scaling-stroke"/><circle cx="400" cy="8" r="3.5" fill="#b2fff0"/></svg>
+              <div class="chart-x"><span>08:00</span><span>10:00</span><span>12:00</span><span>14:00</span></div>
+            </div>
+          </article>
+        </section>
+
+        <section class="guidance-section" id="guidance">
+          <div class="guidance-title"><div><div class="section-kicker">WHAT YOU CAN DO</div><h2>现在，可以先做这些</h2><p>根据本地模拟风险整理的行动建议</p></div><span class="guidance-mark">安全从准备开始 <b>✳</b></span></div>
+          <div class="guidance-grid">
+            <article class="guide-card"><span class="guide-number">01</span><span class="guide-icon home-icon">⌂</span><div><h3>检查房屋与门窗</h3><p>收好阳台物品，检查门窗是否关牢，备好手电和饮用水。</p><span class="guide-tag">居家准备</span></div><span class="guide-arrow">↗</span></article>
+            <article class="guide-card"><span class="guide-number">02</span><span class="guide-icon sea-icon">⌁</span><div><h3>远离海边和低洼处</h3><p>避免前往海堤、河道和易积水路段，留意当地转移通知。</p><span class="guide-tag">外出注意</span></div><span class="guide-arrow">↗</span></article>
+            <article class="guide-card"><span class="guide-number">03</span><span class="guide-icon boat-icon">⌁</span><div><h3>关注船只避风安排</h3><p>渔船作业人员听从海事、渔业主管部门的返港与避风安排。</p><span class="guide-tag">海上作业</span></div><span class="guide-arrow">↗</span></article>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer"><span>海岸安 · 沿海气象风险预警平台 <span class="footer-demo">DEMO</span></span><span>演示内容不构成真实天气预报、预警或应急指令 <i>·</i> 实际情况请以当地气象台及政府部门最新发布为准</span><a href="#top">返回顶部 ↑</a></footer>
+    </div>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    <script src="app.js"></script>
+  </body>
+</html>
+
