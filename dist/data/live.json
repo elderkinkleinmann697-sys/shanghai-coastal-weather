@@ -5,24 +5,24 @@
     "latitude": 31.2304,
     "longitude": 121.4737
   },
-  "fetchedAt": "2026-11-17T20:27:16.539Z",
+  "fetchedAt": "2026-11-17T21:28:54.167Z",
   "refreshIntervalMinutes": 15,
   "warnings": [],
   "typhoons": [],
   "weather": {
-    "observedAt": "2026-11-18T04:15+08:00",
+    "observedAt": "2026-11-18T05:15+08:00",
     "current": {
-      "time": "2026-11-18T04:15",
+      "time": "2026-11-18T05:15",
       "interval": 900,
-      "temperature_2m": 12.4,
+      "temperature_2m": 12.1,
       "relative_humidity_2m": 92,
-      "precipitation": 0.1,
-      "rain": 0.1,
-      "weather_code": 51,
-      "cloud_cover": 100,
-      "wind_speed_10m": 7.7,
-      "wind_direction_10m": 306,
-      "wind_gusts_10m": 16.6
+      "precipitation": 0,
+      "rain": 0,
+      "weather_code": 3,
+      "cloud_cover": 99,
+      "wind_speed_10m": 9.3,
+      "wind_direction_10m": 310,
+      "wind_gusts_10m": 19.4
     },
     "units": {
       "time": "iso8601",
@@ -38,11 +38,6 @@
       "wind_gusts_10m": "km/h"
     },
     "recentPrecipitation": [
-      {
-        "time": "2026-11-17T15:00+08:00",
-        "precipitationMm": 0,
-        "probabilityPercent": 2
-      },
       {
         "time": "2026-11-17T16:00+08:00",
         "precipitationMm": 0,
@@ -67,12 +62,17 @@
         "time": "2026-11-17T20:00+08:00",
         "precipitationMm": 0,
         "probabilityPercent": 4
+      },
+      {
+        "time": "2026-11-17T21:00+08:00",
+        "precipitationMm": 0,
+        "probabilityPercent": 7
       }
     ],
     "rainCore": {
-      "locationName": "上海中心城区",
-      "latitude": 31.2304,
-      "longitude": 121.4737,
+      "locationName": "上海南部",
+      "latitude": 30.92,
+      "longitude": 121.47,
       "precipitationRateMmH": 0.4,
       "intensity": "小雨",
       "method": "Open-Meteo 九点格点估算；移动方向仅作趋势参考"
@@ -80,30 +80,30 @@
     "sourceUrl": "https://open-meteo.com/en/docs"
   },
   "radar": {
-    "id": "RC-202611180420",
+    "id": "RC-202611180520",
     "idNote": "平台按雷达时次生成的监测编号，并非气象部门官方云团命名",
-    "observedAt": "2026-11-17T20:20:00.000Z",
-    "generatedAt": "2026-11-17T20:25:25.000Z",
-    "tileUrl": "https://tilecache.rainviewer.com/v2/radar/feb0273dbf3a/256/{z}/{x}/{y}/2/1_1.png",
+    "observedAt": "2026-11-17T21:20:00.000Z",
+    "generatedAt": "2026-11-17T21:25:27.000Z",
+    "tileUrl": "https://tilecache.rainviewer.com/v2/radar/b6865c194ed7/256/{z}/{x}/{y}/2/1_1.png",
     "sourceUrl": "https://www.rainviewer.com/api/weather-maps-api.html",
     "attribution": "Weather radar data by RainViewer"
   },
   "health": {
     "warnings": {
       "ok": true,
-      "updatedAt": "2026-11-17T20:27:16.539Z"
+      "updatedAt": "2026-11-17T21:28:54.167Z"
     },
     "typhoons": {
       "ok": true,
-      "updatedAt": "2026-11-17T20:27:15.941Z"
+      "updatedAt": "2026-11-17T21:28:53.551Z"
     },
     "weather": {
       "ok": true,
-      "updatedAt": "2026-11-17T20:27:14.766Z"
+      "updatedAt": "2026-11-17T21:28:52.354Z"
     },
     "radar": {
       "ok": true,
-      "updatedAt": "2026-11-17T20:27:15.096Z"
+      "updatedAt": "2026-11-17T21:28:53.549Z"
     }
   },
   "sources": [
