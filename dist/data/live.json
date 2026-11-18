@@ -5,24 +5,24 @@
     "latitude": 31.2304,
     "longitude": 121.4737
   },
-  "fetchedAt": "2026-11-18T09:44:04.221Z",
+  "fetchedAt": "2026-11-18T10:46:48.855Z",
   "refreshIntervalMinutes": 15,
   "warnings": [],
   "typhoons": [],
   "weather": {
-    "observedAt": "2026-11-18T17:30+08:00",
+    "observedAt": "2026-11-18T18:45+08:00",
     "current": {
-      "time": "2026-11-18T17:30",
+      "time": "2026-11-18T18:45",
       "interval": 900,
-      "temperature_2m": 11.7,
-      "relative_humidity_2m": 66,
+      "temperature_2m": 11.1,
+      "relative_humidity_2m": 65,
       "precipitation": 0,
       "rain": 0,
       "weather_code": 1,
-      "cloud_cover": 34,
-      "wind_speed_10m": 10.3,
-      "wind_direction_10m": 308,
-      "wind_gusts_10m": 28.8
+      "cloud_cover": 23,
+      "wind_speed_10m": 11.4,
+      "wind_direction_10m": 291,
+      "wind_gusts_10m": 25.9
     },
     "units": {
       "time": "iso8601",
@@ -38,11 +38,6 @@
       "wind_gusts_10m": "km/h"
     },
     "recentPrecipitation": [
-      {
-        "time": "2026-11-18T04:00+08:00",
-        "precipitationMm": 0.2,
-        "probabilityPercent": 91
-      },
       {
         "time": "2026-11-18T05:00+08:00",
         "precipitationMm": 0.4,
@@ -67,6 +62,11 @@
         "time": "2026-11-18T09:00+08:00",
         "precipitationMm": 0,
         "probabilityPercent": 18
+      },
+      {
+        "time": "2026-11-18T10:00+08:00",
+        "precipitationMm": 0,
+        "probabilityPercent": 7
       }
     ],
     "rainCore": {
@@ -81,30 +81,30 @@
     "sourceUrl": "https://open-meteo.com/en/docs"
   },
   "radar": {
-    "id": "RC-202611181740",
+    "id": "RC-202611181840",
     "idNote": "平台按雷达时次生成的监测编号，并非气象部门官方云团命名",
-    "observedAt": "2026-11-18T09:40:00.000Z",
-    "generatedAt": "2026-11-18T09:40:30.000Z",
-    "tileUrl": "https://tilecache.rainviewer.com/v2/radar/4a746ca7ebaf/256/{z}/{x}/{y}/2/1_1.png",
+    "observedAt": "2026-11-18T10:40:00.000Z",
+    "generatedAt": "2026-11-18T10:45:26.000Z",
+    "tileUrl": "https://tilecache.rainviewer.com/v2/radar/830364c58eb1/256/{z}/{x}/{y}/2/1_1.png",
     "sourceUrl": "https://www.rainviewer.com/api/weather-maps-api.html",
     "attribution": "Weather radar data by RainViewer"
   },
   "health": {
     "warnings": {
       "ok": true,
-      "updatedAt": "2026-11-18T09:44:04.221Z"
+      "updatedAt": "2026-11-18T10:46:48.855Z"
     },
     "typhoons": {
       "ok": true,
-      "updatedAt": "2026-11-18T09:44:03.809Z"
+      "updatedAt": "2026-11-18T10:46:47.641Z"
     },
     "weather": {
       "ok": true,
-      "updatedAt": "2026-11-18T09:44:02.753Z"
+      "updatedAt": "2026-11-18T10:46:46.838Z"
     },
     "radar": {
       "ok": true,
-      "updatedAt": "2026-11-18T09:44:03.317Z"
+      "updatedAt": "2026-11-18T10:46:48.574Z"
     }
   },
   "sources": [
