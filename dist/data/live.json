@@ -5,24 +5,24 @@
     "latitude": 31.2304,
     "longitude": 121.4737
   },
-  "fetchedAt": "2026-11-17T23:29:02.939Z",
+  "fetchedAt": "2026-11-18T00:28:39.857Z",
   "refreshIntervalMinutes": 15,
   "warnings": [],
   "typhoons": [],
   "weather": {
-    "observedAt": "2026-11-18T06:30+08:00",
+    "observedAt": "2026-11-18T08:15+08:00",
     "current": {
-      "time": "2026-11-18T06:30",
+      "time": "2026-11-18T08:15",
       "interval": 900,
-      "temperature_2m": 11.8,
-      "relative_humidity_2m": 89,
+      "temperature_2m": 12,
+      "relative_humidity_2m": 87,
       "precipitation": 0,
       "rain": 0,
-      "weather_code": 2,
-      "cloud_cover": 77,
-      "wind_speed_10m": 9.3,
-      "wind_direction_10m": 298,
-      "wind_gusts_10m": 20.5
+      "weather_code": 3,
+      "cloud_cover": 100,
+      "wind_speed_10m": 9,
+      "wind_direction_10m": 286,
+      "wind_gusts_10m": 21.2
     },
     "units": {
       "time": "iso8601",
@@ -39,19 +39,9 @@
     },
     "recentPrecipitation": [
       {
-        "time": "2026-11-17T17:00+08:00",
-        "precipitationMm": 0,
-        "probabilityPercent": 6
-      },
-      {
-        "time": "2026-11-17T18:00+08:00",
-        "precipitationMm": 0,
-        "probabilityPercent": 5
-      },
-      {
         "time": "2026-11-17T19:00+08:00",
         "precipitationMm": 0,
-        "probabilityPercent": 4
+        "probabilityPercent": 3
       },
       {
         "time": "2026-11-17T20:00+08:00",
@@ -61,50 +51,60 @@
       {
         "time": "2026-11-17T21:00+08:00",
         "precipitationMm": 0,
-        "probabilityPercent": 7
+        "probabilityPercent": 10
       },
       {
         "time": "2026-11-17T22:00+08:00",
         "precipitationMm": 0,
-        "probabilityPercent": 11
+        "probabilityPercent": 20
+      },
+      {
+        "time": "2026-11-17T23:00+08:00",
+        "precipitationMm": 0,
+        "probabilityPercent": 33
+      },
+      {
+        "time": "2026-11-18T00:00+08:00",
+        "precipitationMm": 0.1,
+        "probabilityPercent": 52
       }
     ],
     "rainCore": {
-      "locationName": "上海南部",
-      "latitude": 30.92,
-      "longitude": 121.47,
-      "precipitationRateMmH": 0.4,
-      "intensity": "小雨",
+      "locationName": "上海全市暂无明显降雨核心",
+      "latitude": 31.2304,
+      "longitude": 121.4737,
+      "precipitationRateMmH": 0,
+      "intensity": "无明显降雨",
+      "movementDirection": "无明显移动",
       "method": "Open-Meteo 九点格点估算；移动方向仅作趋势参考"
     },
     "sourceUrl": "https://open-meteo.com/en/docs"
   },
   "radar": {
-    "id": "RC-202611180720",
+    "id": "RC-202611180820",
     "idNote": "平台按雷达时次生成的监测编号，并非气象部门官方云团命名",
-    "observedAt": "2026-11-17T23:20:00.000Z",
-    "generatedAt": "2026-11-17T23:25:24.000Z",
-    "tileUrl": "https://tilecache.rainviewer.com/v2/radar/c2fce219274e/256/{z}/{x}/{y}/2/1_1.png",
+    "observedAt": "2026-11-18T00:20:00.000Z",
+    "generatedAt": "2026-11-18T00:25:32.000Z",
+    "tileUrl": "https://tilecache.rainviewer.com/v2/radar/e7e593fcfbca/256/{z}/{x}/{y}/2/1_1.png",
     "sourceUrl": "https://www.rainviewer.com/api/weather-maps-api.html",
     "attribution": "Weather radar data by RainViewer"
   },
   "health": {
     "warnings": {
       "ok": true,
-      "updatedAt": "2026-11-17T23:28:30.056Z"
+      "updatedAt": "2026-11-18T00:28:39.857Z"
     },
     "typhoons": {
       "ok": true,
-      "updatedAt": "2026-11-17T23:28:30.275Z"
+      "updatedAt": "2026-11-18T00:28:39.460Z"
     },
     "weather": {
-      "ok": false,
-      "updatedAt": "2026-11-17T23:29:02.939Z",
-      "error": "fetch failed"
+      "ok": true,
+      "updatedAt": "2026-11-18T00:28:38.780Z"
     },
     "radar": {
       "ok": true,
-      "updatedAt": "2026-11-17T23:28:30.055Z"
+      "updatedAt": "2026-11-18T00:28:39.134Z"
     }
   },
   "sources": [
