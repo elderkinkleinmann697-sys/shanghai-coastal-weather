@@ -5,7 +5,7 @@
     "latitude": 31.2304,
     "longitude": 121.4737
   },
-  "fetchedAt": "2026-11-20T02:45:05.017Z",
+  "fetchedAt": "2026-11-20T03:39:40.520Z",
   "refreshIntervalMinutes": 15,
   "warnings": [],
   "typhoons": [],
@@ -81,30 +81,31 @@
     "sourceUrl": "https://open-meteo.com/en/docs"
   },
   "radar": {
-    "id": "RC-202611201040",
+    "id": "RC-202611201130",
     "idNote": "平台按雷达时次生成的监测编号，并非气象部门官方云团命名",
-    "observedAt": "2026-11-20T02:40:00.000Z",
-    "generatedAt": "2026-11-20T02:40:22.000Z",
-    "tileUrl": "https://tilecache.rainviewer.com/v2/radar/fb349275862b/256/{z}/{x}/{y}/2/1_1.png",
+    "observedAt": "2026-11-20T03:30:00.000Z",
+    "generatedAt": "2026-11-20T03:35:41.000Z",
+    "tileUrl": "https://tilecache.rainviewer.com/v2/radar/d0a41d364366/256/{z}/{x}/{y}/2/1_1.png",
     "sourceUrl": "https://www.rainviewer.com/api/weather-maps-api.html",
     "attribution": "Weather radar data by RainViewer"
   },
   "health": {
     "warnings": {
       "ok": true,
-      "updatedAt": "2026-11-20T02:45:05.017Z"
+      "updatedAt": "2026-11-20T03:39:08.352Z"
     },
     "typhoons": {
       "ok": true,
-      "updatedAt": "2026-11-20T02:45:04.513Z"
+      "updatedAt": "2026-11-20T03:39:08.344Z"
     },
     "weather": {
-      "ok": true,
-      "updatedAt": "2026-11-20T02:45:03.465Z"
+      "ok": false,
+      "updatedAt": "2026-11-20T03:39:40.520Z",
+      "error": "fetch failed"
     },
     "radar": {
       "ok": true,
-      "updatedAt": "2026-11-20T02:45:04.302Z"
+      "updatedAt": "2026-11-20T03:39:08.138Z"
     }
   },
   "sources": [
