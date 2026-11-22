@@ -5,24 +5,24 @@
     "latitude": 31.2304,
     "longitude": 121.4737
   },
-  "fetchedAt": "2026-11-22T21:05:52.732Z",
+  "fetchedAt": "2026-11-22T21:51:52.119Z",
   "refreshIntervalMinutes": 15,
   "warnings": [],
   "typhoons": [],
   "weather": {
-    "observedAt": "2026-11-23T05:00+08:00",
+    "observedAt": "2026-11-23T05:45+08:00",
     "current": {
-      "time": "2026-11-23T05:00",
+      "time": "2026-11-23T05:45",
       "interval": 900,
-      "temperature_2m": 12.5,
-      "relative_humidity_2m": 80,
+      "temperature_2m": 12.7,
+      "relative_humidity_2m": 79,
       "precipitation": 0,
       "rain": 0,
       "weather_code": 3,
       "cloud_cover": 100,
-      "wind_speed_10m": 8.4,
-      "wind_direction_10m": 170,
-      "wind_gusts_10m": 16.9
+      "wind_speed_10m": 9.2,
+      "wind_direction_10m": 173,
+      "wind_gusts_10m": 18
     },
     "units": {
       "time": "iso8601",
@@ -81,30 +81,30 @@
     "sourceUrl": "https://open-meteo.com/en/docs"
   },
   "radar": {
-    "id": "RC-202611230500",
+    "id": "RC-202611230550",
     "idNote": "平台按雷达时次生成的监测编号，并非气象部门官方云团命名",
-    "observedAt": "2026-11-22T21:00:00.000Z",
-    "generatedAt": "2026-11-22T21:05:22.000Z",
-    "tileUrl": "https://tilecache.rainviewer.com/v2/radar/2c3a70ea0e9e/256/{z}/{x}/{y}/2/1_1.png",
+    "observedAt": "2026-11-22T21:50:00.000Z",
+    "generatedAt": "2026-11-22T21:50:29.000Z",
+    "tileUrl": "https://tilecache.rainviewer.com/v2/radar/adbb7323e66e/256/{z}/{x}/{y}/2/1_1.png",
     "sourceUrl": "https://www.rainviewer.com/api/weather-maps-api.html",
     "attribution": "Weather radar data by RainViewer"
   },
   "health": {
     "warnings": {
       "ok": true,
-      "updatedAt": "2026-11-22T21:05:52.732Z"
+      "updatedAt": "2026-11-22T21:51:52.118Z"
     },
     "typhoons": {
       "ok": true,
-      "updatedAt": "2026-11-22T21:05:52.682Z"
+      "updatedAt": "2026-11-22T21:51:51.575Z"
     },
     "weather": {
       "ok": true,
-      "updatedAt": "2026-11-22T21:05:51.870Z"
+      "updatedAt": "2026-11-22T21:51:50.685Z"
     },
     "radar": {
       "ok": true,
-      "updatedAt": "2026-11-22T21:05:52.461Z"
+      "updatedAt": "2026-11-22T21:51:50.921Z"
     }
   },
   "sources": [
