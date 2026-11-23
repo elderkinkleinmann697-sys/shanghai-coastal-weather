@@ -5,24 +5,24 @@
     "latitude": 31.2304,
     "longitude": 121.4737
   },
-  "fetchedAt": "2026-11-23T00:22:21.555Z",
+  "fetchedAt": "2026-11-23T01:57:46.233Z",
   "refreshIntervalMinutes": 15,
   "warnings": [],
   "typhoons": [],
   "weather": {
-    "observedAt": "2026-11-23T07:15+08:00",
+    "observedAt": "2026-11-23T09:45+08:00",
     "current": {
-      "time": "2026-11-23T07:15",
+      "time": "2026-11-23T09:45",
       "interval": 900,
-      "temperature_2m": 13.5,
-      "relative_humidity_2m": 76,
+      "temperature_2m": 15.6,
+      "relative_humidity_2m": 69,
       "precipitation": 0,
       "rain": 0,
-      "weather_code": 2,
-      "cloud_cover": 75,
-      "wind_speed_10m": 9.8,
-      "wind_direction_10m": 188,
-      "wind_gusts_10m": 19.8
+      "weather_code": 3,
+      "cloud_cover": 100,
+      "wind_speed_10m": 7.3,
+      "wind_direction_10m": 200,
+      "wind_gusts_10m": 18.4
     },
     "units": {
       "time": "iso8601",
@@ -38,16 +38,6 @@
       "wind_gusts_10m": "km/h"
     },
     "recentPrecipitation": [
-      {
-        "time": "2026-11-22T18:00+08:00",
-        "precipitationMm": 0,
-        "probabilityPercent": 0
-      },
-      {
-        "time": "2026-11-22T19:00+08:00",
-        "precipitationMm": 0,
-        "probabilityPercent": 0
-      },
       {
         "time": "2026-11-22T20:00+08:00",
         "precipitationMm": 0,
@@ -67,6 +57,16 @@
         "time": "2026-11-22T23:00+08:00",
         "precipitationMm": 0,
         "probabilityPercent": 0
+      },
+      {
+        "time": "2026-11-23T00:00+08:00",
+        "precipitationMm": 0,
+        "probabilityPercent": 0
+      },
+      {
+        "time": "2026-11-23T01:00+08:00",
+        "precipitationMm": 0,
+        "probabilityPercent": 0
       }
     ],
     "rainCore": {
@@ -81,31 +81,30 @@
     "sourceUrl": "https://open-meteo.com/en/docs"
   },
   "radar": {
-    "id": "RC-202611230820",
+    "id": "RC-202611230950",
     "idNote": "平台按雷达时次生成的监测编号，并非气象部门官方云团命名",
-    "observedAt": "2026-11-23T00:20:00.000Z",
-    "generatedAt": "2026-11-23T00:20:25.000Z",
-    "tileUrl": "https://tilecache.rainviewer.com/v2/radar/0fe6315b359a/256/{z}/{x}/{y}/2/1_1.png",
+    "observedAt": "2026-11-23T01:50:00.000Z",
+    "generatedAt": "2026-11-23T01:55:25.000Z",
+    "tileUrl": "https://tilecache.rainviewer.com/v2/radar/c176a74d300d/256/{z}/{x}/{y}/2/1_1.png",
     "sourceUrl": "https://www.rainviewer.com/api/weather-maps-api.html",
     "attribution": "Weather radar data by RainViewer"
   },
   "health": {
     "warnings": {
       "ok": true,
-      "updatedAt": "2026-11-23T00:22:18.154Z"
+      "updatedAt": "2026-11-23T01:57:46.114Z"
     },
     "typhoons": {
       "ok": true,
-      "updatedAt": "2026-11-23T00:22:18.453Z"
+      "updatedAt": "2026-11-23T01:57:46.114Z"
     },
     "weather": {
-      "ok": false,
-      "updatedAt": "2026-11-23T00:22:21.555Z",
-      "error": "Unexpected token 'U', \"Unexpected\"... is not valid JSON"
+      "ok": true,
+      "updatedAt": "2026-11-23T01:57:46.233Z"
     },
     "radar": {
       "ok": true,
-      "updatedAt": "2026-11-23T00:22:18.148Z"
+      "updatedAt": "2026-11-23T01:57:46.112Z"
     }
   },
   "sources": [
