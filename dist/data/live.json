@@ -5,24 +5,24 @@
     "latitude": 31.2304,
     "longitude": 121.4737
   },
-  "fetchedAt": "2026-11-23T06:58:06.268Z",
+  "fetchedAt": "2026-11-23T08:40:57.546Z",
   "refreshIntervalMinutes": 15,
   "warnings": [],
   "typhoons": [],
   "weather": {
-    "observedAt": "2026-11-23T14:45+08:00",
+    "observedAt": "2026-11-23T16:30+08:00",
     "current": {
-      "time": "2026-11-23T14:45",
+      "time": "2026-11-23T16:30",
       "interval": 900,
-      "temperature_2m": 15.2,
+      "temperature_2m": 14.5,
       "relative_humidity_2m": 69,
-      "precipitation": 0.1,
-      "rain": 0.1,
-      "weather_code": 51,
+      "precipitation": 0,
+      "rain": 0,
+      "weather_code": 3,
       "cloud_cover": 100,
-      "wind_speed_10m": 7.2,
-      "wind_direction_10m": 231,
-      "wind_gusts_10m": 14.8
+      "wind_speed_10m": 9.4,
+      "wind_direction_10m": 253,
+      "wind_gusts_10m": 18.7
     },
     "units": {
       "time": "iso8601",
@@ -38,16 +38,6 @@
       "wind_gusts_10m": "km/h"
     },
     "recentPrecipitation": [
-      {
-        "time": "2026-11-23T01:00+08:00",
-        "precipitationMm": 0,
-        "probabilityPercent": 0
-      },
-      {
-        "time": "2026-11-23T02:00+08:00",
-        "precipitationMm": 0,
-        "probabilityPercent": 0
-      },
       {
         "time": "2026-11-23T03:00+08:00",
         "precipitationMm": 0,
@@ -67,43 +57,53 @@
         "time": "2026-11-23T06:00+08:00",
         "precipitationMm": 0,
         "probabilityPercent": 0
+      },
+      {
+        "time": "2026-11-23T07:00+08:00",
+        "precipitationMm": 0,
+        "probabilityPercent": 0
+      },
+      {
+        "time": "2026-11-23T08:00+08:00",
+        "precipitationMm": 0,
+        "probabilityPercent": 0
       }
     ],
     "rainCore": {
-      "locationName": "上海中心城区",
-      "latitude": 31.2304,
-      "longitude": 121.4737,
-      "precipitationRateMmH": 0.4,
+      "locationName": "上海东南部",
+      "latitude": 30.98,
+      "longitude": 121.76,
+      "precipitationRateMmH": 0.8,
       "intensity": "小雨",
       "method": "Open-Meteo 九点格点估算；移动方向仅作趋势参考"
     },
     "sourceUrl": "https://open-meteo.com/en/docs"
   },
   "radar": {
-    "id": "RC-202611231450",
+    "id": "RC-202611231640",
     "idNote": "平台按雷达时次生成的监测编号，并非气象部门官方云团命名",
-    "observedAt": "2026-11-23T06:50:00.000Z",
-    "generatedAt": "2026-11-23T06:55:25.000Z",
-    "tileUrl": "https://tilecache.rainviewer.com/v2/radar/4c59d9233db8/256/{z}/{x}/{y}/2/1_1.png",
+    "observedAt": "2026-11-23T08:40:00.000Z",
+    "generatedAt": "2026-11-23T08:40:21.000Z",
+    "tileUrl": "https://tilecache.rainviewer.com/v2/radar/e205fdc70eab/256/{z}/{x}/{y}/2/1_1.png",
     "sourceUrl": "https://www.rainviewer.com/api/weather-maps-api.html",
     "attribution": "Weather radar data by RainViewer"
   },
   "health": {
     "warnings": {
       "ok": true,
-      "updatedAt": "2026-11-23T06:58:06.268Z"
+      "updatedAt": "2026-11-23T08:40:57.546Z"
     },
     "typhoons": {
       "ok": true,
-      "updatedAt": "2026-11-23T06:58:06.111Z"
+      "updatedAt": "2026-11-23T08:40:57.012Z"
     },
     "weather": {
       "ok": true,
-      "updatedAt": "2026-11-23T06:58:05.345Z"
+      "updatedAt": "2026-11-23T08:40:55.949Z"
     },
     "radar": {
       "ok": true,
-      "updatedAt": "2026-11-23T06:58:05.733Z"
+      "updatedAt": "2026-11-23T08:40:56.395Z"
     }
   },
   "sources": [
